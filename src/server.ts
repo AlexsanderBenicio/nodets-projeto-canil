@@ -23,7 +23,7 @@ server.use(mainRoutes);
 
 //error 404
 server.use((req, res) => {
-    res.send('Página não encontrada!');
+    res.render('pages/404');
 });
 
 //iniciando o servidor

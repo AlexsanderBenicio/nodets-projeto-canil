@@ -144,13 +144,13 @@ export const Pet = {
     //vai pegar os itens do "banco de dados" pelo nome
     getFromName: (name: string): Pet[] => {
         return data.filter(item => 
-            item.name.toLocaleLowerCase().indexOf(name.toLowerCase()) > -1
+            item.name.toLowerCase().indexOf(name.toLowerCase()) > -1
         );
     },
     //vai pegar os itens do "banco de dados" pelo sexo
     getFromSex: (sex: PetSex): Pet[] => {
         return data.filter(item => 
-            item.sex.toLocaleLowerCase().indexOf(sex.toLowerCase()) > -1
+            item.sex.toLowerCase().indexOf(sex.toLowerCase()) > -1
         );
     }
 };
